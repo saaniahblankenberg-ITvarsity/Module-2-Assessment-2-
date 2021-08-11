@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="header">
+        <img src="images/logo.png">
+    </div>
+
+
+
+    <div class="topnav">
+        <a href="#home" class="Active" onclick="myFunction()">Contact Us</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./stores.html">Stores</a>
+            <a href="./entertainment.html">Entertainment</a>
+
+
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <br>
+    <div id="info-box-full1">
+        <h1> We love hearing from you! Please leave us a message and we'll get back to you.</h1>
+        <div class="center"><img src="./images/mall/mall.jpg"></div>
+
+        <br>
+        <p> <strong> Trading Hours</strong> </p>
+        <ul>
+            <li>9h00am - 19h00pm : Monday - Thurday</li>
+            <li> 9h00am - 21h00pm : Friday & Saturday </li>
+            <li>9h00am - 14h00pm : Sundays & Public Holdidays</li>
+        </ul>
+        <p>WHERE WILL YOU Us</p>
+        <p> <strong> Address:</strong> Magwa &, Lone Creek Cres, Waterval City, Midrand, 1686</p>
+        <p><strong>Phone:</strong> 010 596 1470</p>
+
+    </div>
+
+
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Email">Email Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Email" name="email" placeholder="Your email address..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="comment">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="comment" name="comment">
+            <option value="compliment">Complaint</option>
+            <option value="complaint">Compliment</option>
+            <option value="suggestion">Suggestion</option>
+            <option value="other">Other</option>
+          </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="./transitions.js"></script>
+</body>
+
+</html>

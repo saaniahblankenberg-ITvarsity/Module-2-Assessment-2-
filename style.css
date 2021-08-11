@@ -1,0 +1,584 @@
+/* Global  */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+
+/* Global  */
+
+body {
+    background-image: url(./images/Background.jpeg);
+    background-size: cover;
+}
+
+
+/* Header Start */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(160, 197, 191);
+    background-size: cover;
+}
+
+#header img {
+    display: block;
+    margin: auto;
+    height: 90%;
+    padding-top: 10px;
+}
+
+
+/* Header End */
+
+
+/* Top-nav Start */
+
+.topnav {
+    overflow: hidden;
+    background-color: #42859E;
+    position: relative;
+    top: 80px;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav #myLinks {
+    display: none;
+}
+
+
+/* Style navigation menu links */
+
+
+/*  */
+
+.topnav a {
+    color: white;
+    padding: 10px 13px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+    background: #42859E;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* Add a grey background color on mouse-over */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Style the active link (or home/logo) */
+
+.Active {
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Top-nav End */
+
+#bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: #42859E;
+}
+
+#bottom-nav a:hover {
+    font-weight: bold;
+    color: #555a5c;
+}
+
+#bottom-nav a {
+    float: left;
+    display: block;
+    width: 50%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+
+/* Botton-nav End  */
+
+* {
+    box-sizing: border-box
+}
+
+.heading {
+    margin-top: 100px;
+    font-family: 'Roboto';
+    color: white;
+    padding-left: 5px;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 90%;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Image gallery Start */
+
+.heading1 {
+    font-family: 'Roboto';
+    color: white;
+    padding-left: 5px;
+}
+
+.ourstores {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Image gallery End */
+
+
+/* about us Start */
+
+.heading2 {
+    font-family: 'Roboto';
+    color: white;
+    padding-left: 5px;
+    background-color: rgba(165, 158, 158, 0.548);
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.heading2 h1 {
+    text-align: center;
+}
+
+.heading2 p {
+    text-align: center;
+}
+
+.heading2 img {
+    width: 90%;
+    padding-right: 15%;
+    padding-left: 20%;
+}
+
+
+/* about us End */
+
+
+/* Stores Start */
+
+#main {
+    margin-top: 119px;
+}
+
+#main h1 {
+    color: white;
+    text-align: center;
+}
+
+#content {
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+a.info-box {
+    text-decoration: none;
+    background: rgba(255, 255, 253, 0.938);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px;
+    color: cadetblue;
+}
+
+.info-box img {
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box h3 {
+    padding: 0;
+    margin-bottom: 0;
+    width: 90%;
+    color: #572800;
+}
+
+.info-box p {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: 131313;
+}
+
+.info-box img.right {
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+.info-box img {
+    width: 120px;
+    height: 60px;
+}
+
+
+/* Stores End */
+
+
+/* PAGES STORES START */
+
+#info-box-full {
+    background-color: rgba(44, 44, 44, 0.61);
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+#info-box-full img {
+    width: 100%;
+    height: 75%;
+}
+
+#info-box-full h3 {
+    text-align: center;
+    font-family: 'Roboto';
+    color: white;
+}
+
+#info-box-full p {
+    text-align: center;
+    font-family: 'Roboto';
+    color: white;
+}
+
+#info-box-full ul {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.ourstores1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+
+/* PAGES STORES END*/
+
+
+/* entertainment start */
+
+#movies {
+    background-color: #42859E;
+}
+
+.contentBox {
+    margin-top: 60px;
+    background-image: url(./images/movies/logo-1.jpg);
+    background-size: contain;
+    color: white;
+    text-align: center;
+}
+
+.divbox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.column1 {
+    flex: 33%;
+    max-width: 33%;
+    padding: 5px 4px;
+}
+
+.column1:hover {
+    border: solid 2px white;
+    color: Black;
+    background-color: #ddd;
+}
+
+.column1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 65%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column1 {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column1 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* entertainment end */
+
+
+/* Movie pages start  */
+
+.text-box {
+    padding: 10px;
+    background-color: rgba(221, 221, 221, 0.274);
+    margin: 15px;
+}
+
+
+/* Movie pages end  */
+
+
+/* Contact us start  */
+
+#info-box-full1 {
+    background-color: rgba(44, 44, 44, 0.61);
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#info-box-full1 img {
+    width: 100%;
+    height: 50%;
+}
+
+#info-box-full1 h1 {
+    text-align: center;
+    font-family: 'Roboto';
+    color: white;
+}
+
+#info-box-full1 p {
+    text-align: center;
+    font-family: 'Roboto';
+    color: white;
+}
+
+#info-box-full1 ul {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto';
+    color: white;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #42859E;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #555a5c;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+/* Contact us end  */
